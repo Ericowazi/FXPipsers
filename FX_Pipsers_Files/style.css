@@ -1,0 +1,872 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: #f5f5f5;
+  margin-top: 60px;
+  font-family: "PT Sans", sans-serif;
+}
+body p {
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/*navigation bar*/
+/*logo*/
+.navbar .navbar-brand {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  color: #fff;
+}
+.navbar .navbar-brand #fx{
+  color: #ff9b00;
+  font-weight: 900;
+}
+.navbar button{
+  background: #fff;
+  border: 2px solid #fff;
+}
+
+/*menu*/
+.navbar .navbar-nav li a {
+  font-size: 1em;
+  color: #c3beb6;
+  text-transform: uppercase;
+  font-family: "PT Sans", sans-serif;
+}
+.navbar .navbar-nav li a:hover {
+  color: #fff;
+}
+
+.navbar-nav li .dropdown-menu {
+  background: #343a40;
+  border: none;
+}
+.navbar-nav li .dropdown-menu a {
+  color: #fff;
+}
+.navbar-nav li .dropdown-menu a:hover {
+  background: #343a40;
+  color: #c3beb6;
+}
+.navbar .navbar-nav li a.logIn {
+  display: inline-block;
+  color: #000;
+  background: #d8d4d4;
+  padding: .2em .5em 0 0;
+  margin: 5px 0;
+  font-size: .9em;
+  border-radius: 2px;
+  text-align: center;
+}
+.navbar .navbar-nav li a.logIn:hover {
+  background: #fff;
+}
+/* showcase with background image*/
+#showcase {
+  background: url("../FX_Pipsers_Files/images-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  margin: 0;
+}
+#showcase .content-wrap{
+  background: linear-gradient(rgb(0, 0, 0, 0.72), rgb(0, 0, 0, 0.72));
+  padding: 40px 1em 20px;
+  margin: 0;
+}
+#showcase .header{
+  text-align: center;
+}
+#showcase .header h1{
+  color: #ff9b00;
+  margin-top: 20px;
+  font-size: 2em;
+  text-shadow: 3px 6px #333;
+}
+#showcase .header p{
+  margin-bottom: 5em;
+  color: #c3beb6;
+  font-size: .8em;
+}
+#showcase .showcase-p h4{
+  text-align: center;
+  color: #f9f5ec;
+  font-size: 1.2em;
+  text-shadow: 1px 3px 5px #333;
+}
+#showcase .showcase-h{
+  margin-bottom: 30px;
+}
+/* btn */
+#showcase .showcase-btn{
+  display: grid;
+}
+#showcase .showcase-btn .btn{
+  color: #fff;
+  padding: .5em 3em;
+  font-size: 1.1em;
+  margin: 0 auto 3em;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #fff;
+}
+#showcase .showcase-btn .btn:hover{
+  color: #333;
+  background: #c3beb6;
+  border: 2px solid #c3beb6;
+}
+/* join-us btn */
+#showcase .showcase-btn .join-us{
+  color: #fff;
+  background: #44940a;
+  font-weight: 700;
+  padding: .7em 3em;
+  margin: 3em auto 1em;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 3px 6px 0 #333;
+  font-size: 1.1em;
+  border: 2 solid #44940a;
+  border-radius: 5px;
+}
+#showcase .showcase-btn  .join-us:hover{
+  background: #4b8224;
+  font-size: 1.11em;
+}
+/* benefits */
+.benefits{
+  justify-content: center;
+  background: #fff;
+}
+.benefits h2{
+  color: #ff9b00;
+  background: #008000;
+  text-align: center;
+  font-size: 1.4em;
+  padding: .8em ;
+}
+ /* //our members// of h2 given color white */
+.benefits #link{
+  color: #fff;
+  text-decoration: none;
+}
+.benefits .benefits-1,
+.benefits-2, .benefits-3,
+.benefits-4 {
+  padding: 1em;
+}
+/* img parent */
+.benefits  figure{
+  display: grid;
+  justify-content: center;
+}
+
+.benefits figure img{
+  width: 80px;
+  height: 80px;
+}
+/* giveaway img// increasing the size */
+.benefits figure #alert{
+  width: 100px;
+  height: 100px;
+}
+.benefits h3{
+  text-align: center;
+  color: #000;
+}
+.benefits p{
+  text-align: center;
+  color: #58554f;
+  font-size: 1em;
+}
+
+/* top 5 brokers */
+.topfive{
+  padding: 1em;
+  display: grid;
+  justify-content: center;
+}
+.topfive table{
+  border: 1px solid #c3beb6;
+}
+.topfive table th{
+  text-align: center;
+  font-size: 1.5em;
+  padding: .6em 1.5em;
+  color: #fff;
+  background: #333;
+}
+.topfive table a{
+  text-decoration: none;
+  text-align: left;
+  color: #c3beb6;
+  font-size: 1.3em;
+  font-weight: 900;
+  margin-left: 1.5em;
+}
+.topfive table img{
+  padding: .6em;
+}
+.topfive .btn{
+  text-decoration: none;
+  text-align: center;
+  font-weight: 900;
+  color: #333;
+  background: #ff9b00;
+}
+/* forex trading strategies */
+.fxstrategies{
+  padding: .4em .2em;
+  background: #808080;
+}
+.fxstrategies h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: .2em 0;
+  background: #fff;
+  color: #008000;
+}
+.fxstrategies a{
+  color: #000;
+  text-decoration: none;
+}
+.fxstrategies .fx-content:hover{
+  background: #f5f5f5;
+}
+.fxstrategies .fx-content{
+  padding: 1em 0;
+  text-align: center;
+  border-bottom: 1px solid #c3beb6;
+}
+.fxstrategies .fx-content h3{
+  margin: 0;
+}
+.fxstrategies .fx-content p{
+  text-align: left;
+  padding: .6em;
+}
+/* livesignals  */
+.livesignals{
+  margin: 2em .5em;
+  border: 1px solid #008000;
+}
+.livesignals h3{
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background: #008000;
+  font-size: 1.4em;
+  padding: .2em 1em;
+}
+.livesignals .sg{
+  display: grid;
+  justify-content: center;
+}
+.livesignals .signal-1{
+  padding: .3em;
+  margin: 1em;
+  background: #fff;
+}
+.livesignals .signal-1 p{
+  font-weight: 500;
+}
+.livesignals .signal-1 #signal{
+  margin-left: 1em;
+  font-weight: 600;
+  color: red;
+}
+.livesignals .signal-1 #signal-2{
+  margin-left: 1em;
+  font-weight: 600;
+  color: #008000;
+}
+.livesignals .signal-1 table{
+  font-size: .9em;
+}
+.livesignals .signal-1 table a{
+  text-decoration: none;
+}
+.livesignals .signal-1 table #pr a{
+  background: #808080;
+  padding: .2em .6em .2em .2em;
+  font-size: .85em;
+  color: #fff;
+}
+.livesignals .signal-1 table #prt a{
+  background: #3232af;
+  padding: .3em;
+  font-size: .85em;
+  color: #fff;
+}
+
+/* remember the last section?  */
+.last {
+  background: #f5f5f5;
+}
+.last .last-a,
+.last-b,.last-c{
+  padding: 0.6em 1em;
+}
+.last h3{
+font-size: 1.3em;
+}
+.last a{
+  text-decoration: none;
+  text-align: left;
+  color: #d28206;
+  padding: .4em auto .4em 0;
+}
+.last  a:hover{
+  text-decoration: underline;
+}
+.last  p{
+  text-align: left;
+}
+.last .register{
+  display: grid;
+  grid-template-columns: 2fr auto;
+  grid-template-areas:
+  "a b"
+  "c d";
+}
+.last .register{
+  margin: 0;
+  background-color: #d28206;
+  background: url("../FX_Pipsers_Files/images-6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 40vh;
+}
+/* arrow img */
+.last .register img{
+  position: absolute;
+  left: 5%;
+  margin-top: .7em;
+  transform: rotateY(180deg);
+}
+.last .register p{
+  color: #fff;
+}
+.last .register #p{
+  grid-area: a;
+  color: #efebc0;
+  font-size: 1em;
+  text-align: right;
+  margin: 1em;
+  padding: 2em .6em .6em 1.5em;
+  border-right: 1px solid #efebc0;
+}
+.last .register #reg{
+  grid-area: d;
+  margin: 1em 3em 1em auto;
+}
+.last .register #reg .btn{
+  text-decoration: none;
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff9b00;
+  margin: 1em auto auto -.5em;
+}
+/* blink like effect */
+.last .register #reg .btn {
+  animation: invest 1s cubic-bezier(0.42, 0, 0, 0.99) 0s infinite;
+}
+@keyframes invest {
+  to, 80% {
+	color: #000;
+  }
+}
+
+/*footer*/
+footer{
+  background: #f5f5f5;
+}
+footer .navbar-brand{
+  width: 1fr;
+  color: #808080;
+  text-align: left;
+  font-size: 1.9em;
+  padding: .8em 0 0 0;
+  margin: 0 0 20px 1.5em;
+  /* border-bottom: 5px solid #808080; */
+}
+footer .navbar-brand #fx{
+  color: #ff9b0082;
+}
+.footer {
+  text-align: center;
+  margin: 0 auto;
+}
+footer .footer-cols {
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: .8em;
+  text-align: left;
+  font-size: .9rem;
+}
+footer .footer-cols ul {
+  list-style: none;
+}
+footer .footer-cols ul a {
+  color: #333;
+}
+footer .footer-cols ul a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+footer .footer-cols ul li:first-child {
+  border-bottom: #333 solid 1px;
+  margin-bottom: .5em;
+  text-decoration: none;
+}
+footer .footer-cols ul li:first-child a{
+  font-size: 1em;
+  color: #d28206;
+}
+footer .footer-cols ul li:first-child a:hover{
+  text-decoration: none;
+}
+/* disclaimer */
+footer .disclaimer{
+  margin: 0 3em 1em;
+}
+footer .disclaimer label{
+  border: 1px dashed #808080;
+  font-size: 1.1em;
+  font-style: italic;
+  padding: 0 1.5em 0 .3em;
+  display: inline-block;
+  cursor: pointer;
+  text-align: left;
+  background: url("../FX_Pipsers_Files/icon-1.png") no-repeat right ;
+  background-color: #e1e3e4;
+  color: #808080;
+}
+input#menu{
+  display: none;
+}
+footer .pcontent ul p{
+  color: #808080;
+  padding: .5em;
+  text-align: left;
+}
+footer .pcontent{
+  max-height: 0;
+  overflow: hidden;
+}
+footer .disclaimer input:checked ~ label{
+  padding: 0 1.5em 0 .3em;
+  background-image: url("../FX_Pipsers_Files/icon-2.png");
+}
+footer .disclaimer input:checked ~ .pcontent{
+  max-height: 100%;
+  width: 90%;
+  background: #e1e3e4;
+  border: 1px dashed #343a40;
+}
+
+/* footer */
+footer .footer-bottom {
+  background: #000;
+  padding: 1rem;
+  color:  #ff9b0080;
+  font-size: .9em;
+}
+footer .footer-bottom a{
+  text-decoration: none;
+  color: #808080;
+  font-size: .9em;
+}
+footer .footer-bottom a:hover{
+  text-decoration: underline;
+  color: #d3beb6;
+}
+
+/* media queries starts from this point */
+/* hawalaula hawalaula hawalaulawalaula hawalaula */
+/* i cant believe you read that */
+@media only screen and (max-width: 320px){
+  #showcase .header h1{
+    font-size: 1.7em;
+  }
+  .navbar-nav li .dropdown-menu a {
+    font-size: .9em;
+  }
+  .benefits h2{
+    font-size: 1.1em;
+  }
+  .livesignals h3{
+    font-size: 1.2em;
+  }
+  .livesignals .signal-1 table{
+    font-size: .7em;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .benefits h2{
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (min-width: 500px){
+  .FXPipsers{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "showcase showcase"
+    "sect sect"
+    "bene bene"
+    "last last";
+  }
+  /* showcase take 2 columns */
+  #showcase{
+    grid-area: showcase;
+  }
+  #showcase .header h1{
+    font-size: 3em;
+  }
+  #showcase .header{
+    margin-top: 5em;
+  }
+  #showcase .showcase-btn{
+    margin-bottom: 10em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "a b";
+  }
+  #showcase .showcase-btn .btn{
+    grid-area: a;
+    margin: 3em .3em 1em auto;
+  }
+  #showcase .showcase-btn .join-us{
+    grid-area: b;
+    margin: 3em auto 1em .3em;
+  }
+  /* benefits  */
+  .benefits{
+    grid-area: bene;
+    display: grid;
+    grid-template-areas:
+    "d d"
+    "a b"
+    "c e";
+  }
+  .benefits h3{
+    font-size: 1.3em;
+  }
+  .benefits h2{
+    grid-area: d;
+  }
+  .benefits .benefits-1{
+    grid-area: a;
+  }
+  .benefits .benefits-2{
+    grid-area: b;
+  }
+  .benefits .benefits-3{
+    grid-area: c;
+  }
+  .benefits .benefits-4{
+    grid-area: e;
+    margin-top: 1.3em;
+  }
+  /* section a parenting top 5 brokers trading strategies && live signals */
+  .section-a{
+    grid-area: sect;
+    display: grid;
+    grid-template-columns: 40% 59.9%;
+    grid-template-areas:
+    "a a "
+    "b c ";
+  }
+  .topfive{
+    grid-area: b;
+    max-height: 20vh;
+    margin-top: 1.1em;
+  }
+  .fxstrategies{
+    grid-area: a;
+    margin: 2em 1.2em 0;
+    padding: .5em 0;
+  }
+  .livesignals{
+    grid-area: c;
+    margin-right: 1.1em;
+  }
+  .section-a .fxstrategies .fx-content {
+    padding: .5em 1em;
+  }
+  .section-a .fxstrategies .fx-content p{
+    text-align: justify;
+  }
+  .last{
+    grid-area: last;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 50% 50%;
+    /* i use alphabets to avoid blowing up my brain  */
+    /* aint easy figuring out some words  */
+    grid-template-areas:
+    "a b"
+    "c d";
+  }
+  .last-a{
+    grid-area: a;
+  }
+  .last-b{
+    grid-area: b;
+  }
+  .last-c{
+    grid-area: d;
+    margin-top: 2em;
+  }
+  .last .register{
+    grid-area: c;
+    min-height: 8vh;
+    margin: .5em 0 0 .2em;
+  }
+  .register img{
+    height: 0;
+    width: 0;
+  }
+  .last .register #p{
+    padding-top: 1em;
+  }
+  footer .footer .footer-cols{
+    grid-gap: .5em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  footer .footer-cols ul li:first-child {
+    border-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 810px){
+  .navbar .navbar-nav li a {
+    text-transform: capitalize;
+  }
+  .navbar-nav li .dropdown-menu a {
+    padding-left: .5em;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0 .5em 0 0;
+    margin-top: .7em;
+  }
+  .FXPipsers{
+    margin: 0 auto;
+    display: grid;
+    /* it is not necessary to include g-t-c and g-t-a but well >>> */
+    /* for it can save us some time later if previous media query is changed  */
+    grid-template-columns: 25% repeat(2, minmax(auto, 25%)) 25%;
+    grid-template-areas:
+    "showcase showcase showcase showcase"
+    "sect sect sect sect"
+    "bene bene bene bene"
+    "last last last last";
+  }
+  /* showcase take 2 columns */
+  #showcase{
+    grid-area: showcase;
+  }
+  #showcase .header h1{
+    font-size: 3.5em;
+  }
+  #showcase .header{
+    margin-top: 3em;
+  }
+  #showcase .showcase-btn{
+    margin-bottom: 10em;
+    display: grid;
+    grid-template-columns: 49.9% 49.9%;
+    grid-template-areas:
+    "a b";
+  }
+  #showcase .showcase-btn .btn{
+    grid-area: a;
+    margin: 3.5em .3em 1em auto;
+  }
+  #showcase .showcase-btn .join-us{
+    grid-area: b;
+    margin: 3.5em auto 1em .3em;
+  }
+  /* benefits  */
+  .benefits{
+    grid-area: bene;
+    display: grid;
+    grid-template-areas:
+    "e e e e"
+    "a b c d";
+  }
+  .benefits h3{
+    font-size: 1.3em;
+  }
+  .benefits h2{
+    grid-area: e;
+    font-size: 1.3em;
+  }
+  .benefits .benefits-1{
+    grid-area: a;
+    margin-top: 1.3em;
+  }
+  .benefits .benefits-2{
+    grid-area: b;
+    margin-top: 1.3em;
+  }
+  .benefits .benefits-3{
+    grid-area: c;
+  }
+  .benefits .benefits-4{
+    grid-area: d;
+    margin-top: 1.3em;
+  }
+  /* section a parenting top 5 brokers trading strategies && live signals */
+  .section-a{
+    grid-area: sect;
+    display: grid;
+    grid-template-columns: 24.9% 39.9% 34.9%;
+    grid-template-areas:
+    "a b c";
+  }
+  .topfive{
+    grid-area: a;
+    max-height: 20vh;
+    margin-top: 1.1em;
+  }
+  .fxstrategies{
+    grid-area: b;
+    margin: 2em 1.2em 3.8em;
+    padding: .5em 0;
+    background: none;
+  }
+  .fxstrategies:hover{
+    background: #333;
+  }
+  .livesignals{
+    grid-area: c;
+    margin-right: 1.1em;
+  }
+  .livesignals .signal-1{
+    margin: .5em;
+  }
+  /* last section */
+  .last{
+    grid-area: last;
+    display: grid;
+    grid-template-columns: 24.9% 24.9% 24.9% 24.9%;
+    /* i use alphabets to avoid blowing up my brain  */
+    /* aint easy figuring out some words  */
+    grid-template-areas:
+    "a b c d";
+  }
+  .last-a{
+    grid-area: a;
+    margin-top: 2em;
+  }
+  .last-b{
+    grid-area: b;
+    margin-top: 2em;
+  }
+  .last-c{
+    grid-area: d;
+    margin-top: 2em;
+  }
+  .last .register{
+    grid-area: c;
+    min-height: 20vh;
+    margin:1em 0 0;
+  }
+  .register img{
+    height: 0;
+    width: 0;
+  }
+  .last .register #p{
+    padding-top: 1em;
+    margin-left: -1em;
+  }
+  footer .navbar-brand{
+    margin-top: 1em;
+    margin-left: 1.8em;
+  }
+  footer .footer .footer-cols{
+  margin: 0 .5em;
+    display: grid;
+    grid-template-columns: 24.9% 24.9% 24.9% 24.9%;
+  }
+  footer .footer-cols ul li:first-child {
+    border-bottom: 0;
+  }
+  footer .disclaimer{
+    margin-left: 3.5em;
+  }
+}
+/* laptops and desktops */
+@media only screen and (min-width: 1224px){
+  .navbar .navbar-nav li a {
+    text-transform: uppercase;
+}
+  .navbar .navbar-brand{
+    margin-left: -2em;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: .6em;
+    margin-top: .8em;
+    text-transform: uppercase;
+  }
+  .navbar .navbar-nav li a.logIn{
+    margin: .8em 0 0 1em;
+    padding: .2em .5em 0 0;
+    border-radius: 2px;
+    font-size: .9em;
+  }
+  .section-a{
+    grid-area: sect;
+    display: grid;
+    grid-template-columns: 24.9% 44.9% 29.9%;
+    grid-template-areas:
+    "a b c";
+  }
+  .last .register{
+    min-height: 31vh;
+  }
+  .last .register #p{
+    margin-left: 1em;
+    margin-bottom: -.5em;
+  }
+  footer .navbar-brand{
+    margin-top: .5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+z
