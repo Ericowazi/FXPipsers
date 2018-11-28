@@ -295,10 +295,10 @@ body p {
   text-decoration: none;
 }
 .livesignals .signal-1 table #pr a{
-  background: #808080;
+  background: #e8e8e8;
   padding: .2em .6em .2em .2em;
   font-size: .85em;
-  color: #fff;
+  color: #333;
 }
 .livesignals .signal-1 table #prt a{
   background: #3232af;
@@ -309,7 +309,7 @@ body p {
 
 /* remember the last section?  */
 .last {
-  background: #f5f5f5;
+  background: #f1f0f0;
 }
 .last .last-a,
 .last-b,.last-c{
@@ -388,7 +388,7 @@ font-size: 1.3em;
 
 /*footer*/
 footer{
-  background: #f5f5f5;
+  background: #f1f0f0;
 }
 footer .navbar-brand{
   width: 1fr;
